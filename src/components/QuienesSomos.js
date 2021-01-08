@@ -16,16 +16,16 @@ const QuienesSomos = () => {
     
         <h5>ESTEFANIA ROBLES</h5>
         <p><i><b>Arquitecta técnica e interiorista</b></i></p>
-            <p>Creemos que un proyecto empieza desde su visualización y queremos ayudarte a dar este primer paso.</p>
-            <p>Interpretamos el interiorismo como una mejora de la calidad de vida plasmada en un espacio y se trata de dar con la solución más adecuada en cada uno de ellos.</p>
+            <p>El interiorismo es una herramienta que te ayuda a definir tu estilo de vida, confortable, funcional y personal.</p>
+            <p>El interiorismo es el reflejo de tu personalidad. El hogar es sinónimo de descanso, reunión.</p>
         </Col>
          
 <Col>
 <Image src="./images/marc.jpg" roundedCircle />
 <h5>MARC BRUGUES</h5>
 <p><i><b>Visual Merchandiser y diseñador gráfico</b></i></p>
-            <p>Creemos que un proyecto empieza desde su visualización y queremos ayudarte a dar este primer paso.</p>
-            <p>Interpretamos el interiorismo como una mejora de la calidad de vida plasmada en un espacio y se trata de dar con la solución más adecuada en cada uno de ellos.</p>
+            <p>El mundo del retail cambia a pasos agigantados seguramente al ritmo que cambia la sociedad. Los clientes son cada vez más exigentes, somos nosotros (los especialistas en ventas) quienes nos debemos adaptar a ellos.</p>
+            <p>Más de 10 años de experiencia como visual merchandiser, he trabajado para marcas como Mazda, Yundai, IKEA.</p>
 </Col>
             
     </Row>

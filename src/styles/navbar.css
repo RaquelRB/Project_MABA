@@ -1,0 +1,29 @@
+
+.Navbar{
+    background-color: white;
+}
+
+.Navbar .Link{
+    color: black
+}
+
+.menu-column{
+    line-height: 0.5rem;
+    text-align: left
+}
+
+#logo-img{
+    width:150px;
+    position: absolute;
+    left: 0; top:0; right: 0; bottom: 0;
+    margin: auto;
+    margin-top:1px
+}
+
+
+@media (max-width:770px){
+    .menu-column{
+    margin-top: 100px;
+    text-align: center
+}
+}

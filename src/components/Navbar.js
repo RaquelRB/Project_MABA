@@ -1,22 +1,18 @@
 
 import React from 'react'
-import { Navbar, Nav, Image } from 'react-bootstrap';
+import { Navbar, Nav, Col, Image } from 'react-bootstrap';
 import { Link, animateScroll as scroll } from "react-scroll";
+
+import '../styles/navbar.css';
+
 
 class NavbarFix extends React.Component {
     render() {
         return (
-            <Navbar  bg="light" expand="lg" className="nav-bar" fixed="top">
-            <Navbar.Brand href="/" >
-              LOGO
-              {/* <Image src="./images/logoMABA.png"/> */}
-            
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="ml-auto">
+            <Navbar  bg="white" expand="lg" className="nav-bar" fixed="top">
+            <Navbar.Brand href="/">
 
-                <Nav.Link>  
+            <Nav.Link>  
                     <Link
                       activeClass="active"
                       to="home"
@@ -24,18 +20,26 @@ class NavbarFix extends React.Component {
                       smooth={true}
                       offset={-100}
                       duration={500}
-                  >HOME</Link>
+                  >
+                  <Image src="./images/logoMABA.png" id="logo-img"/>
+                  
+                  </Link>
                 </Nav.Link>
+            </Navbar.Brand>
 
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="ml-auto">
+                <Col className="menu-column">
                 <Nav.Link>  
                     <Link
                       activeClass="active"
                       to="queOfrecemos"
                       spy={true}
                       smooth={true}
-                      offset={-100}
+                      offset={-135}
                       duration={500}
-                  >QUÉ OFRECEMOS</Link>
+                  >01/ QUE OFRECEMOS</Link>
                 </Nav.Link>
 
                 <Nav.Link>  
@@ -44,9 +48,9 @@ class NavbarFix extends React.Component {
                       to="portfolio"
                       spy={true}
                       smooth={true}
-                      offset={-100}
+                      offset={-120}
                       duration={500}
-                  >PORTFOLIO</Link>
+                  >02/ PROYECTOS</Link>
                 </Nav.Link>
 
                 <Nav.Link>  
@@ -55,9 +59,9 @@ class NavbarFix extends React.Component {
                       to="quienesSomos"
                       spy={true}
                       smooth={true}
-                      offset={-100}
+                      offset={-135}
                       duration={500}
-                  >QUIENES SOMOS</Link>
+                  >03/ QUIENES SOMOS</Link>
                 </Nav.Link>
 
                 <Nav.Link>  
@@ -66,10 +70,12 @@ class NavbarFix extends React.Component {
                       to="contacto"
                       spy={true}
                       smooth={true}
-                      offset={-100}
+                      offset={-135}
                       duration={500}
-                  >CONTACTO</Link>
+                  >04/ CONTACTO</Link>
                 </Nav.Link>
+                </Col>
+                
 
               </Nav>
             </Navbar.Collapse>

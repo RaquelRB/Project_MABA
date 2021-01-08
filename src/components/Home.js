@@ -48,11 +48,3 @@ const Home = () => {
 }
 
 export default Home
-
-{/* <h2>"Menos es siempre más"</h2> */ }
-
-{/* <p>Somos un estudio de interiorismo y visual merchandisign especializado en crear espacios únicos y funcionales ajustados a cada presupuesto.</p>
-
-<p>Nos adaptamos a tus gustos y necesidades, sin olvidar que en los pequeños cambios está la diferencia.</p>
-
-<p>Añadir links a Pinterest, Instagram, Facebook</p> */}

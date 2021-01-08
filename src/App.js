@@ -52,7 +52,10 @@ class App extends React.Component {
           <Contacto />
           </div>  
         </Container>
-            
+
+         <footer className="footer">
+         Copyright 2020 ©MABA
+         </footer>   
 
       </div>
     );

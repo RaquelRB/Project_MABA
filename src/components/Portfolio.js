@@ -21,9 +21,9 @@ const Portfolio = () => {
 
                 <div className="hover-content">
                     <div className="hover-text">
-                        <p>Este proyecto está muy chulo, dale al botón para ver más imágenes</p>
+                        <p>Te ofrecemos un proyecto completo en el que incluimos un moodboard o collage de inspiración inicial, un plano de distribución, las vistas en 3D de tu espacio y un último collage donde te</p>
                         <Button variant="light" onClick={handleShow}>
-                            Más
+                            +
                         </Button>
 
                     </div>
@@ -83,8 +83,12 @@ const Portfolio = () => {
     return (
         <div className="Portfolio">
             <Container>
-                <h2>Portfolio</h2>
+                <h2>Proyectos</h2>
                 <Row>
+
+                    <Col xs={12} md={4} className="project-div">
+                        <Animation />
+                    </Col>
 
                     <Col xs={12} md={4} className="project-div">
                         <Animation />

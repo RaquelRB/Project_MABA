@@ -1,5 +1,40 @@
 
+.card-deck{
+    text-align: left;
+}
+
+.card-deck h5{
+    color: #666666;
+}
 
 .card-deck img{
-    width: 100px
+    height: 200px;
+    object-fit: contain;
 }
+
+.card-deck hr{
+    border-top: 2px dotted;
+    color: #EDE1D4;
+}
+
+.initial-text{
+    color: #a89c8c;
+    font-style: italic;
+}
+
+.presupuesto{
+    font-weight: bold;
+    /* line-height: 0.5rem; */
+}
+
+.card-shadow{
+    border: none;
+    -webkit-box-shadow: 3px 6px 26px -16px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 6px 26px -16px rgba(0,0,0,0.75);
+box-shadow: 3px 6px 26px -16px rgba(0,0,0,0.75);
+}
+
+
+
+
+
