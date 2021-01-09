@@ -15,7 +15,7 @@ import Portfolio from './components/Portfolio';
 import QuienesSomos from './components/QuienesSomos';
 import Contacto from './components/Contacto';
 
-// import navbackground from './images/navbackground.png'
+
 
 class App extends React.Component {
 
@@ -49,7 +49,7 @@ class App extends React.Component {
           <br/>
 
           <div id="contacto">
-          <Contacto />
+          <Contacto/>
           </div>  
         </Container>
 

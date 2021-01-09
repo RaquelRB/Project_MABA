@@ -1,44 +1,103 @@
+import React, { useState } from 'react'
 
-import React from 'react'
-import { Container, Form, Image, Button, Col } from 'react-bootstrap';
+import axios from 'axios'
+
+import { Container, Form, Button, Col } from 'react-bootstrap';
 
 import '../styles/contacto.css';
 
 const Contacto = () => {
+
+    const [state, setState] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+    });
+
+    const [result, setResult] = useState(null);
+
+    const sendEmail = event => {
+        event.preventDefault();
+        axios
+            .post('/send', { ...state })
+            .then(response => {
+                setResult(response.data);
+                setState({ name: '', email: '', subject: '', message: '' });
+            })
+            .catch(() => {
+                setResult({ success: false, message: 'Algo salió mal. Vuelve a intentarlo más tarde.' });
+            });
+    }
+
+    const onInputChange = event => {
+        const { name, value } = event.target;
+
+        setState({
+            ...state,
+            [name]: value
+        });
+    };
+
+
     return (
-        <div className="Contacto">
-            <Container>
-                <h2>Contacto</h2>
-
-                <Form>
-                <Col xs={12} md={{ span: 6, offset: 3 }}>
-
-                
-                    <Form.Group controlId="Nombre">
-                        {/* <Form.Label>Example textarea</Form.Label> */}
-                        <Form.Control type="text" placeholder="Nombre" />
-                    </Form.Group>
-
-                    <Form.Group controlId="exampleForm.ControlInput1">
-                        {/* <Form.Label>Email address</Form.Label> */}
-                        <Form.Control type="email" placeholder="Correo electrónico" />
-                    </Form.Group>
-
-
-                    <Form.Group controlId="exampleForm.ControlTextarea1">
-                        {/* <Form.Label>Example textarea</Form.Label> */}
-                        <Form.Control as="textarea" rows={3} placeholder="Mensaje" />
-                    </Form.Group>
-                    <Button variant="light" type="submit">
-                        Enviar
-                    </Button>
-                    </Col>
-                </Form>
-            </Container>
-
-
+        <div className='Contacto'>
+        <h2>Contacta con nosotros</h2>
+            <form onSubmit={sendEmail}>
+                <Form.Group controlId="name">
+                    {/* <Form.Label>Nombre</Form.Label> */}
+                    <Form.Control
+                        type="text"
+                        name="name"
+                        value={state.name}
+                        placeholder="Nombre"
+                        onChange={onInputChange}
+                    />
+                </Form.Group>
+                <Form.Group controlId="email">
+                    {/* <Form.Label>Email</Form.Label> */}
+                    <Form.Control
+                        type="text"
+                        name="email"
+                        value={state.email}
+                        placeholder="Correo electrónico"
+                        onChange={onInputChange}
+                    />
+                </Form.Group>
+                <Form.Group controlId="subject">
+                    {/* <Form.Label>Subject</Form.Label> */}
+                    <Form.Control
+                        type="text"
+                        name="subject"
+                        value={state.subject}
+                        placeholder="Asunto"
+                        onChange={onInputChange}
+                    />
+                </Form.Group>
+                <Form.Group controlId="subject">
+                    {/* <Form.Label>Message</Form.Label> */}
+                    <Form.Control
+                        as="textarea"
+                        name="message"
+                        value={state.message}
+                        rows="3"
+                        placeholder="Mensaje"
+                        onChange={onInputChange}
+                    />
+                </Form.Group>
+                <Button variant="primary" type="submit">
+                    Enviar
+          </Button>
+            </form>
+            {result && (
+                <p className={`${result.success ? 'success' : 'error'}`}>
+                    {result.message}
+                </p>
+            )}
         </div>
-    )
+    );
 }
 
+
 export default Contacto
+
