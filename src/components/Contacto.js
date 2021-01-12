@@ -52,6 +52,7 @@ const Contacto = () => {
                         value={state.name}
                         placeholder="Nombre"
                         onChange={onInputChange}
+                        required
                     />
                 </Form.Group>
                 <Form.Group controlId="email">
@@ -62,6 +63,7 @@ const Contacto = () => {
                         value={state.email}
                         placeholder="Correo electrónico"
                         onChange={onInputChange}
+                        required
                     />
                 </Form.Group>
                 <Form.Group controlId="subject">
@@ -72,6 +74,7 @@ const Contacto = () => {
                         value={state.subject}
                         placeholder="Asunto"
                         onChange={onInputChange}
+                        required
                     />
                 </Form.Group>
                 <Form.Group controlId="subject">
@@ -83,9 +86,10 @@ const Contacto = () => {
                         rows="3"
                         placeholder="Mensaje"
                         onChange={onInputChange}
+                        required
                     />
                 </Form.Group>
-                <Button variant="primary" type="submit">
+                <Button variant="light" type="submit">
                     Enviar
           </Button>
             </form>

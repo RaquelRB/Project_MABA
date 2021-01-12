@@ -2,8 +2,13 @@
 
 .Contacto{
     text-align: center;
+    width:60%;
+    margin: auto
 }
 
 .Contacto img{
     width: 200px
 }
+
+
+
