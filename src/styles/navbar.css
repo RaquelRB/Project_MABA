@@ -1,14 +1,20 @@
 
 .Navbar{
     background-color: white;
+    
 }
+
+.nav-bar{
+    font-size: 0.7rem;
+}
+
 
 .Navbar .Link{
     color: black
 }
 
 .menu-column{
-    line-height: 0.5rem;
+    line-height: 0.2rem;
     text-align: left
 }
 

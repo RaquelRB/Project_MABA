@@ -1,6 +1,8 @@
 
+
 .card-deck{
     text-align: left;
+    font-size: 0.8rem;
 }
 
 .card-deck h5{
@@ -8,7 +10,7 @@
 }
 
 .card-deck img{
-    height: 200px;
+    height: 150px;
     object-fit: contain;
 }
 

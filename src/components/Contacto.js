@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import axios from 'axios'
 
-import { Container, Form, Button, Col } from 'react-bootstrap';
+import { Container, Form, Button, Col, Row } from 'react-bootstrap';
 
 import '../styles/contacto.css';
 
@@ -41,9 +41,14 @@ const Contacto = () => {
 
 
     return (
+        <Container>
         <div className='Contacto'>
-        <h2>Contacta con nosotros</h2>
-            <form onSubmit={sendEmail}>
+        <Row>
+    <Col xs={1} lg={3} className="borderLeft" ></Col>
+    <Col xs={10} lg={6}><h3 className="section-title">CONTACTA CON NOSOTROS</h3></Col>
+    <Col xs={1} lg={3} className="borderRight" ></Col>
+  </Row>
+            <form onSubmit={sendEmail} className="margin-top">
                 <Form.Group controlId="name">
                     {/* <Form.Label>Nombre</Form.Label> */}
                     <Form.Control
@@ -99,6 +104,7 @@ const Contacto = () => {
                 </p>
             )}
         </div>
+        </Container>
     );
 }
 

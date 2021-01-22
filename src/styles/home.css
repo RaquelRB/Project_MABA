@@ -8,47 +8,99 @@
 }
 
 #home-background-image{
-    height: 20rem;
+    height: 28rem;
     width: 100%;
     object-fit: cover
 }
 
 .homeText{
     position: absolute;
-    /* margin: auto; */
+    background-color: rgba(255,255,255, 0.4);
+    padding: 40px 330px;
+    width: auto;
+    margin: auto 15px;
     color: #666666;
-    top: 0;
+    top: 30%;
+    left:0;
+    right:0;
+    bottom: auto
 }
 
-.home-card img{
-    width: 10%;
+.links-container{
+    position: absolute;
+    text-align: center;
+    margin: 0px 100px;
+    width: auto;
+    left:0;
+    right:0;
+    bottom: 40px;
+    
 }
 
-.home-card{
-    background-color: transparent;
-    border: none;
-    width: 50%;
-    height: auto;
-    margin: 1rem;
+.links-container img{
+    width: 4%;
+}
+
+
+.homeText{
+    padding: 40px 330px;
+    top: 30%;
+    left:0;
+    right:0;
+    bottom: auto
+}
+
+@media (max-width:1024px){
+    .homeText{
+        padding: 40px 250px;
+    }
+    .links-container img{
+        width: 40px;
+    }
 }
 
 @media (max-width:770px){
-    .home-card{
-        width: 70%;
+    .homeText{
+        padding: 40px 100px;
+    }
+    .links-container img{
+        width: 40px;
     }
 }
 
 @media (max-width:500px){
-    .home-card{
-        width: 100%;
-        margin: auto;
+    .homeText{
+        padding: 0px 35px;
+    }
+    .links-container img{
+        width: 35px;
     }
 }
 
 @media (max-width:360px){
-    .home-card{
-        width: 100%;
-        font-size: 0.8rem;
-        margin: auto;
+    .homeText{
+        padding: 0px 35px;
+    }
+    .links-container img{
+        width: 30px;
+    }
+}
+
+@media (max-width:321px){
+    .homeText{
+        padding: 0px 10px;
+    }
+    .links-container img{
+        width: 25px;
+    }
+    .links-container{
+        margin: 0px 5px;
+        bottom: 25px;
+    }
+    .QueOfrecemos h3{
+        line-height: 2rem;
+    }
+    .QuienesSomos h3{
+        line-height: 2rem;
     }
 }

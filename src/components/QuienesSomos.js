@@ -9,9 +9,14 @@ const QuienesSomos = () => {
         <div className="QuienesSomos">
 
 <Container>
-    <h2>Quienes somos</h2>
-    <Row>
-        <Col>
+<Row>
+    <Col xs={1} lg={3} className="borderLeft" ></Col>
+    <Col xs={10} lg={6}><h3 className="section-title">QUIÉNES SOMOS</h3></Col>
+    <Col xs={1} lg={3} className="borderRight" ></Col>
+  </Row>
+
+    <Row className="margin-top">
+        <Col xs={12} md={6}>
       <Image src="./images/estefi.jpg" roundedCircle />
     
         <h5>ESTEFANIA ROBLES</h5>
@@ -20,7 +25,7 @@ const QuienesSomos = () => {
             <p>El interiorismo es el reflejo de tu personalidad. El hogar es sinónimo de descanso, reunión.</p>
         </Col>
          
-<Col>
+<Col xs={12} md={6}>
 <Image src="./images/marc.jpg" roundedCircle />
 <h5>MARC BRUGUES</h5>
 <p><i><b>Visual Merchandiser y diseñador gráfico</b></i></p>

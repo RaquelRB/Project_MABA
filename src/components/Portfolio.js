@@ -143,7 +143,8 @@ const Portfolio = () => {
 
         return (
             <Carousel activeIndex={index} onSelect={handleSelect} className="img-carousel">
-                <Carousel.Item>
+                <Carousel.Item >
+                    <p className="carousel-text">Propuesta de layout, carpintería de expositores y zona de bar con chillout.</p>
                     <img
                         className="d-block w-100"
                         src="images/ShowroomTerrassa/vista01.jpg"
@@ -158,6 +159,7 @@ const Portfolio = () => {
                     />
                 </Carousel.Item>
                 <Carousel.Item>
+                <p className="carousel-text">Propuesta de layout, carpintería de expositores y zona de bar con chillout.</p>
                     <img
                         className="d-block w-100"
                         src="images/ShowroomTerrassa/vista04.jpg"
@@ -359,22 +361,26 @@ const Portfolio = () => {
     return (
         <div className="Portfolio">
             <Container>
-                <h2>Proyectos</h2>
-                <Row>
+            <Row>
+    <Col xs={1} lg={3} className="borderLeft" ></Col>
+    <Col xs={10} lg={6}><h3 className="section-title">PROYECTOS</h3></Col>
+    <Col xs={1} lg={3} className="borderRight" ></Col>
+  </Row>
+                <Row className="margin-top">
 
-                    <Col xs={12} md={3} className="project-div">
+                    <Col xs={12} md={6} lg={3} className="project-div">
                         <LoftGalicia />
                     </Col>
 
-                    <Col xs={12} md={3} className="project-div">
+                    <Col xs={12} md={6} lg={3} className="project-div">
                         <ShowroomTerrassa />
                     </Col>
 
-                    <Col xs={12} md={3} className="project-div">
+                    <Col xs={12} md={6} lg={3} className="project-div">
                         <FrutaVerdura />
                     </Col>
 
-                    <Col xs={12} md={3} className="project-div">
+                    <Col xs={12} md={6} lg={3} className="project-div">
                         <RestauranteMadrid />
                     </Col>
 

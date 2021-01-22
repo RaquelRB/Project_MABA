@@ -2,13 +2,22 @@
 
 .Contacto{
     text-align: center;
-    width:60%;
+
     margin: auto
 }
+
+/* .Contacto h3{
+    line-height: 0.8rem;
+} */
 
 .Contacto img{
     width: 200px
 }
 
+@media (max-width:500px){
+    .Contacto h3{
+        line-height: 2rem;
+    }
+}
 
 

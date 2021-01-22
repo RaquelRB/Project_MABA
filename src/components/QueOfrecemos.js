@@ -1,7 +1,7 @@
 
 import React from 'react'
 
-import { Container, CardDeck, Card } from 'react-bootstrap';
+import { Container, CardDeck, Card, Col, Row } from 'react-bootstrap';
 
 import '../styles/queOfrecemos.css';
 
@@ -9,8 +9,15 @@ const QueOfrecemos = () => {
     return (
         <div className="QueOfrecemos">
 <Container>
-<h2>Qué ofrecemos</h2>
-<CardDeck className="card-deck">
+  <Row>
+    <Col xs={1} lg={3} className="borderLeft" ></Col>
+    <Col xs={10} lg={6}><h3 className="section-title">QUÉ OFRECEMOS</h3></Col>
+    <Col xs={1} lg={3} className="borderRight" ></Col>
+  </Row>
+
+
+<CardDeck className="card-deck" className="margin-top" >
+<Col xs={12} lg={4}>
   <Card className="card-shadow">
     <Card.Img variant="top" src="images/interiorismo.png"/>
     <Card.Body>
@@ -30,6 +37,8 @@ const QueOfrecemos = () => {
     </Card.Body>
 
   </Card>
+</Col>
+<Col xs={12} lg={4}>
   <Card className="card-shadow">
     <Card.Img variant="top" src="images/visual.png" />
     <Card.Body>
@@ -45,8 +54,9 @@ const QueOfrecemos = () => {
             <hr/>
       </Card.Text>
     </Card.Body>
-
   </Card>
+</Col>
+<Col xs={12} lg={4}>
   <Card className="card-shadow">
     <Card.Img variant="top" src="images/IV.png" />
     <Card.Body>
@@ -65,6 +75,7 @@ const QueOfrecemos = () => {
     </Card.Body>
 
   </Card>
+</Col>
 </CardDeck>
 </Container>
         </div>

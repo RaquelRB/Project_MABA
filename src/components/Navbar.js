@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { Navbar, Nav, Col, Image } from 'react-bootstrap';
+import { Container, Navbar, Nav, Col, Image } from 'react-bootstrap';
 import { Link, animateScroll as scroll } from "react-scroll";
 
 import '../styles/navbar.css';
@@ -9,9 +9,10 @@ import '../styles/navbar.css';
 class NavbarFix extends React.Component {
     render() {
         return (
-            <Navbar  bg="white" expand="lg" className="nav-bar" fixed="top">
-            <Navbar.Brand href="/">
 
+            <Navbar  bg="white" expand="lg" className="nav-bar" fixed="top">
+              <Container>
+            <Navbar.Brand href="/">
             <Nav.Link>  
                     <Link
                       activeClass="active"
@@ -78,10 +79,10 @@ class NavbarFix extends React.Component {
                 
 
               </Nav>
-            </Navbar.Collapse>
+            </Navbar.Collapse> 
+            </Container>
           </Navbar>
-
-
+         
     )
 }
 }
