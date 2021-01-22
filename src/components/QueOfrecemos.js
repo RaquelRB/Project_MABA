@@ -11,7 +11,7 @@ const QueOfrecemos = () => {
 <Container>
   <Row>
     <Col xs={1} lg={3} className="borderLeft" ></Col>
-    <Col xs={10} lg={6}><h3 className="section-title">QUÉ OFRECEMOS</h3></Col>
+    <Col xs={10} lg={6}><h4 className="section-title">QUÉ OFRECEMOS</h4></Col>
     <Col xs={1} lg={3} className="borderRight" ></Col>
   </Row>
 

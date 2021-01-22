@@ -16,6 +16,7 @@
 .homeText{
     position: absolute;
     background-color: rgba(255,255,255, 0.4);
+    line-height: 1.2rem;
     padding: 40px 330px;
     width: auto;
     margin: auto 15px;
@@ -44,15 +45,16 @@
 
 .homeText{
     padding: 40px 330px;
-    top: 30%;
+    top: 25%;
     left:0;
     right:0;
     bottom: auto
 }
 
-@media (max-width:1024px){
+@media (max-width:1025px){
     .homeText{
         padding: 40px 250px;
+        top: 20%;
     }
     .links-container img{
         width: 40px;
@@ -71,6 +73,7 @@
 @media (max-width:500px){
     .homeText{
         padding: 0px 35px;
+        top: 20%;
     }
     .links-container img{
         width: 35px;

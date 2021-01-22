@@ -45,7 +45,7 @@ const Contacto = () => {
         <div className='Contacto'>
         <Row>
     <Col xs={1} lg={3} className="borderLeft" ></Col>
-    <Col xs={10} lg={6}><h3 className="section-title">CONTACTA CON NOSOTROS</h3></Col>
+    <Col xs={10} lg={6}><h4 className="section-title">CONTACTA CON NOSOTROS</h4></Col>
     <Col xs={1} lg={3} className="borderRight" ></Col>
   </Row>
             <form onSubmit={sendEmail} className="margin-top">

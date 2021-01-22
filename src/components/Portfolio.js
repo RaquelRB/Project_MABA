@@ -31,7 +31,7 @@ const Portfolio = () => {
                     </div>
                 </div>
 
-                <Modal show={show} onHide={handleClose} size="lg">
+                <Modal show={show} onHide={handleClose} size="lg" centered>
                     <Modal.Header closeButton>
                         <Modal.Title>Loft Galicia</Modal.Title>
                     </Modal.Header>
@@ -51,7 +51,7 @@ const Portfolio = () => {
         };
 
         return (
-            <Carousel activeIndex={index} onSelect={handleSelect} className="img-carousel">
+            <Carousel activeIndex={index} onSelect={handleSelect} className="carousel-container">
             <Carousel.Item>
                     <img
                         className="d-block w-100"
@@ -122,7 +122,7 @@ const Portfolio = () => {
                     </div>
                 </div>
 
-                <Modal show={show} onHide={handleClose} size="lg">
+                <Modal show={show} onHide={handleClose} size="lg" centered>
                     <Modal.Header closeButton>
                         <Modal.Title>Showroom en Terrassa</Modal.Title>
                     </Modal.Header>
@@ -152,6 +152,7 @@ const Portfolio = () => {
                     />
                 </Carousel.Item>
                 <Carousel.Item>
+                <p className="carousel-text">Propuesta de layout, carpintería de expositores y zona de bar con chillout.</p>
                     <img
                         className="d-block w-100"
                         src="images/ShowroomTerrassa/vista02.jpg"
@@ -235,7 +236,7 @@ const Portfolio = () => {
                     </div>
                 </div>
 
-                <Modal show={show} onHide={handleClose} size="lg">
+                <Modal show={show} onHide={handleClose} size="lg" centered>
                     <Modal.Header closeButton>
                         <Modal.Title>Tienda de fruta y verdura</Modal.Title>
                     </Modal.Header>
@@ -255,7 +256,7 @@ const Portfolio = () => {
         };
 
         return (
-            <Carousel activeIndex={index} onSelect={handleSelect} className="img-carousel">
+            <Carousel activeIndex={index} onSelect={handleSelect} className="carousel-container">
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
@@ -304,7 +305,7 @@ const Portfolio = () => {
                     </div>
                 </div>
 
-                <Modal show={show} onHide={handleClose} size="lg">
+                <Modal show={show} onHide={handleClose} size="lg" centered>
                     <Modal.Header closeButton>
                         <Modal.Title>Restaurante en Madrid</Modal.Title>
                     </Modal.Header>
@@ -324,7 +325,7 @@ const Portfolio = () => {
         };
 
         return (
-            <Carousel activeIndex={index} onSelect={handleSelect} className="img-carousel">
+            <Carousel activeIndex={index} onSelect={handleSelect} className="carousel-container">
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
@@ -363,24 +364,40 @@ const Portfolio = () => {
             <Container>
             <Row>
     <Col xs={1} lg={3} className="borderLeft" ></Col>
-    <Col xs={10} lg={6}><h3 className="section-title">PROYECTOS</h3></Col>
+    <Col xs={10} lg={6}><h4 className="section-title">PROYECTOS</h4></Col>
     <Col xs={1} lg={3} className="borderRight" ></Col>
   </Row>
-                <Row className="margin-top">
+                <Row className="margin-top projects-container">
 
-                    <Col xs={12} md={6} lg={3} className="project-div">
+                    <Col xs={12} sm={6} md={6} lg={3} className="project-div">
                         <LoftGalicia />
                     </Col>
 
-                    <Col xs={12} md={6} lg={3} className="project-div">
+                    <Col xs={12} sm={6} md={6} lg={3} className="project-div">
                         <ShowroomTerrassa />
                     </Col>
 
-                    <Col xs={12} md={6} lg={3} className="project-div">
+                    <Col xs={12} sm={6} md={6} lg={3} className="project-div">
                         <FrutaVerdura />
                     </Col>
 
-                    <Col xs={12} md={6} lg={3} className="project-div">
+                    <Col xs={12} sm={6} md={6} lg={3} className="project-div">
+                        <RestauranteMadrid />
+                    </Col>
+
+                    <Col xs={12} sm={6} md={6} lg={3} className="project-div">
+                        <RestauranteMadrid />
+                    </Col>
+
+                    <Col xs={12} sm={6} md={6} lg={3} className="project-div">
+                        <RestauranteMadrid />
+                    </Col>
+
+                    <Col xs={12} sm={6} md={6} lg={3} className="project-div">
+                        <RestauranteMadrid />
+                    </Col>
+
+                    <Col xs={12} sm={6} md={6} lg={3} className="project-div">
                         <RestauranteMadrid />
                     </Col>
 

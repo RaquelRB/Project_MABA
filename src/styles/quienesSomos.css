@@ -1,5 +1,20 @@
 
+.quienes-container p{
+    font-size: 0.8rem;
+    width: 80%;
+    margin:auto;
+    line-height: 1.2rem;
+    text-align: justify;
+}
+
+.quienes-container h5{
+    line-height: 3rem;
+}
+
+.quienes-container h6{
+    line-height: 2rem;
+}
 
 .QuienesSomos img {
-    width: 100px
+    width: 130px
 }
