@@ -16,7 +16,7 @@ const QueOfrecemos = () => {
   </Row>
 
 
-<CardDeck className="card-deck" className="margin-top" >
+<CardDeck className="card-deck margin-top" >
 <Col xs={12} lg={4}>
   <Card className="card-shadow">
     <Card.Img variant="top" src="images/interiorismologo.png"/>
