@@ -1,8 +1,8 @@
 
 //React
 import React from 'react';
-import { Navbar, Nav, Container, Row } from 'react-bootstrap';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Container} from 'react-bootstrap';
+
 
 // Styles
 import './App.css';

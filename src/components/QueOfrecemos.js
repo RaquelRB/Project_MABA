@@ -19,7 +19,7 @@ const QueOfrecemos = () => {
 <CardDeck className="card-deck" className="margin-top" >
 <Col xs={12} lg={4}>
   <Card className="card-shadow">
-    <Card.Img variant="top" src="images/interiorismo.png"/>
+    <Card.Img variant="top" src="images/interiorismologo.png"/>
     <Card.Body>
     <hr/>
       <Card.Title><h5>INTERIORISMO</h5></Card.Title>
@@ -40,7 +40,7 @@ const QueOfrecemos = () => {
 </Col>
 <Col xs={12} lg={4}>
   <Card className="card-shadow">
-    <Card.Img variant="top" src="images/visual.png" />
+    <Card.Img variant="top" src="images/visuallogo.png" />
     <Card.Body>
     <hr/>
       <Card.Title><h5>VISUAL MERCHANDISING</h5></Card.Title>
@@ -58,7 +58,7 @@ const QueOfrecemos = () => {
 </Col>
 <Col xs={12} lg={4}>
   <Card className="card-shadow">
-    <Card.Img variant="top" src="images/IV.png" />
+    <Card.Img variant="top" src="images/IVlogo.png" />
     <Card.Body>
     <hr/>
       <Card.Title><h5>IMPLEMENTACIÓN</h5></Card.Title>
