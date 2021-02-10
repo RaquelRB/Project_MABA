@@ -5,9 +5,11 @@ const dotenv = require('dotenv');
 dotenv.config();
 const app = express();
 
+
 const buildPath = path.join(__dirname, '..', 'build');
 app.use(express.json());
 app.use(express.static(buildPath));
+
 
 app.post('/send', (req, res) => {
   try {
@@ -48,6 +50,6 @@ app.post('/send', (req, res) => {
   }
 });
 
-app.listen(3000, () => {
-  console.log('server start on port 3000');
+app.listen(process.env.PORT, () => {
+  console.log(`server start on port ${process.env.PORT}`);
 });
