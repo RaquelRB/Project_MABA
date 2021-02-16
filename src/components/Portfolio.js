@@ -36,8 +36,6 @@ const Portfolio = () => {
                         <Modal.Title>Loft Galicia</Modal.Title>
                     </Modal.Header>
                     <CarouselLoftGalicia />
-                    {/* <Modal.Footer>
-                    </Modal.Footer> */}
                 </Modal>
 
             </div>
@@ -386,15 +384,15 @@ const Portfolio = () => {
                     </Col>
 
                     <Col xs={12} sm={6} md={6} lg={3} className="project-div">
-                        <RestauranteMadrid />
+                        <LoftGalicia />
                     </Col>
 
                     <Col xs={12} sm={6} md={6} lg={3} className="project-div">
-                        <RestauranteMadrid />
+                        <ShowroomTerrassa />
                     </Col>
 
                     <Col xs={12} sm={6} md={6} lg={3} className="project-div">
-                        <RestauranteMadrid />
+                        <FrutaVerdura />
                     </Col>
 
                     <Col xs={12} sm={6} md={6} lg={3} className="project-div">

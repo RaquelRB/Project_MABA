@@ -22,8 +22,8 @@ const QuienesSomos = () => {
                         <h5>ESTEFANIA ROBLES</h5>
                         
                         <h6><i><b>Arquitecta técnica e interiorista</b></i></h6>
-                        <p>El interiorismo es una herramienta que te ayuda a definir tu estilo de vida, confortable, funcional y personal.</p>
-                        <p>El interiorismo es el reflejo de tu personalidad. El hogar es sinónimo de descanso, reunión.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam ante metus, vel luctus urna posuere eu. Suspendisse gravida non tortor eu maximus. Maecenas gravida mi odio, eu rutrum massa viverra ut. .</p>
+                        <p>Donec elementum laoreet lacinia. Morbi a consequat diam. In hac habitasse platea dictumst. Quisque varius neque tellus, et lacinia purus consectetur ac. Phasellus tempus molestie posuere.</p>
                     </Col>
 
 
@@ -32,8 +32,8 @@ const QuienesSomos = () => {
                         <h5>MARC BRUGUES</h5>
                         
                         <h6><i><b>Visual Merchandiser y diseñador gráfico</b></i></h6>
-                        <p>El mundo del retail cambia a pasos agigantados seguramente al ritmo que cambia la sociedad. Los clientes son cada vez más exigentes, somos nosotros (los especialistas en ventas) quienes nos debemos adaptar a ellos.</p>
-                        <p>Más de 10 años de experiencia como visual merchandiser, he trabajado para marcas como Mazda, Yundai, IKEA.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam ante metus, vel luctus urna posuere eu. Suspendisse gravida non tortor eu maximus. Maecenas gravida mi odio, eu rutrum massa viverra ut. .</p>
+                        <p>Donec elementum laoreet lacinia. Morbi a consequat diam. In hac habitasse platea dictumst. Quisque varius neque tellus, et lacinia purus consectetur ac. Phasellus tempus molestie posuere.</p>
                     </Col>
 
                 </Row>
