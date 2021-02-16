@@ -3,7 +3,7 @@ import axios from "axios";
 class EmailService {
     constructor(){
         let service = axios.create({
-            baseURL: "https://project-maba.herokuapp.com/",
+            baseURL: "https://project-maba.herokuapp.com",
             withCredentials: true
         });
 
