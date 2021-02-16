@@ -22,7 +22,8 @@ const QuienesSomos = () => {
                         <h5>ESTEFANIA ROBLES</h5>
                         
                         <h6><i><b>Arquitecta técnica e interiorista</b></i></h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam ante metus, vel luctus urna posuere eu. Suspendisse gravida non tortor eu maximus. Maecenas gravida mi odio, eu rutrum massa viverra ut. .</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam ante metus, vel luctus urna posuere eu. Suspendisse gravida non tortor eu maximus. Maecenas gravida mi odio, eu rutrum massa viverra ut.</p>
+
                         <p>Donec elementum laoreet lacinia. Morbi a consequat diam. In hac habitasse platea dictumst. Quisque varius neque tellus, et lacinia purus consectetur ac. Phasellus tempus molestie posuere.</p>
                     </Col>
 
@@ -32,7 +33,8 @@ const QuienesSomos = () => {
                         <h5>MARC BRUGUES</h5>
                         
                         <h6><i><b>Visual Merchandiser y diseñador gráfico</b></i></h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam ante metus, vel luctus urna posuere eu. Suspendisse gravida non tortor eu maximus. Maecenas gravida mi odio, eu rutrum massa viverra ut. .</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam ante metus, vel luctus urna posuere eu. Suspendisse gravida non tortor eu maximus. Maecenas gravida mi odio, eu rutrum massa viverra ut.</p>
+                        
                         <p>Donec elementum laoreet lacinia. Morbi a consequat diam. In hac habitasse platea dictumst. Quisque varius neque tellus, et lacinia purus consectetur ac. Phasellus tempus molestie posuere.</p>
                     </Col>
 

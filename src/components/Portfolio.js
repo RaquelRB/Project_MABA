@@ -345,13 +345,6 @@ const Portfolio = () => {
                         alt="Third slide"
                     />
                 </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="images/RestauranteMadrid/vista05.jpg"
-                        alt="Third slide"
-                    />
-                </Carousel.Item>
             </Carousel>
         );
     }
