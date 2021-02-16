@@ -1,113 +1,74 @@
 import React, { useState } from 'react'
+import EmailService from '../services/emailService'
 
-import axios from 'axios'
-
-import { Container, Form, Button, Col, Row } from 'react-bootstrap';
+import { Container, Button, Col, Row } from 'react-bootstrap';
 
 import '../styles/contacto.css';
 
-const Contacto = () => {
+function Contacto() {
 
-    const [state, setState] = useState({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-    });
+    const emailService = new EmailService()
 
-    const [result, setResult] = useState(null);
+    const [inputs, setInputs] = useState({email: '', name: '', subject: '', description: ''})
 
-    const sendEmail = event => {
-        event.preventDefault();
-        axios
-            .post('/send', { ...state })
-            .then(response => {
-                setResult(response.data);
-                setState({ name: '', email: '', subject: '', message: '' });
-            })
-            .catch(() => {
-                setResult({ success: false, message: 'Algo salió mal. Vuelve a intentarlo más tarde.' });
-            });
-    }
+    const [status, setStatus] = useState({message: ''})
 
-    const onInputChange = event => {
-        const { name, value } = event.target;
+    const handleChange = e => {
+        const {name, value} = e.target
+        setInputs(prev => ({...prev, [name]: value }))
+      }
 
-        setState({
-            ...state,
-            [name]: value
-        });
-    };
+    const handleSubmit = e => {
+        e.preventDefault()
+        const {email,name,subject,description} = inputs
 
+        emailService.sendEmail({email, name, subject, text: description})
+        .then((result)=> {
+          setStatus(prev => ({...prev, message: result}))
+          setInputs(prev => ({...prev, email:'', name:'', subject:'', description:''}))
+        })
+        .catch(prev => ({...prev, message: 'Ha habido un error al enviar la consulta. Por favor, inténtalo de nuevo más tarde.'}))
+
+      }
 
     return (
-        <Container>
-        <div className='Contacto'>
-        <Row>
-    <Col xs={1} lg={3} className="borderLeft" ></Col>
-    <Col xs={10} lg={6}><h4 className="section-title">CONTACTA CON NOSOTROS</h4></Col>
-    <Col xs={1} lg={3} className="borderRight" ></Col>
-  </Row>
-            <form onSubmit={sendEmail} className="margin-top">
-                <Form.Group controlId="name">
-                    {/* <Form.Label>Nombre</Form.Label> */}
-                    <Form.Control
-                        type="text"
-                        name="name"
-                        value={state.name}
-                        placeholder="Nombre"
-                        onChange={onInputChange}
-                        required
-                    />
-                </Form.Group>
-                <Form.Group controlId="email">
-                    {/* <Form.Label>Email</Form.Label> */}
-                    <Form.Control
-                        type="text"
-                        name="email"
-                        value={state.email}
-                        placeholder="Correo electrónico"
-                        onChange={onInputChange}
-                        required
-                    />
-                </Form.Group>
-                <Form.Group controlId="subject">
-                    {/* <Form.Label>Subject</Form.Label> */}
-                    <Form.Control
-                        type="text"
-                        name="subject"
-                        value={state.subject}
-                        placeholder="Asunto"
-                        onChange={onInputChange}
-                        required
-                    />
-                </Form.Group>
-                <Form.Group controlId="subject">
-                    {/* <Form.Label>Message</Form.Label> */}
-                    <Form.Control
-                        as="textarea"
-                        name="message"
-                        value={state.message}
-                        rows="3"
-                        placeholder="Mensaje"
-                        onChange={onInputChange}
-                        required
-                    />
-                </Form.Group>
-                <Button variant="light" type="submit">
-                    Enviar
-          </Button>
-            </form>
-            {result && (
-                <p className={`${result.success ? 'success' : 'error'}`}>
-                    {result.message}
-                </p>
-            )}
+      <Container>
+        <div className="Contacto">
+
+          <Row>
+        <Col xs={1} lg={3} className="borderLeft" ></Col>
+        <Col xs={10} lg={6}><h4 className="section-title">CONTACTA CON NOSOTROS</h4></Col>
+        <Col xs={1} lg={3} className="borderRight" ></Col>
+        </Row>
+
+      <form onSubmit={handleSubmit} className="margin-top">
+
+        <input className="contact-inputs" type="text" placeholder="email" name="email" value={inputs.email} onChange={handleChange} required/>
+
+        <br />
+
+        <input className="contact-inputs" type="text" placeholder="Nombre" name="name" value={inputs.name} onChange={handleChange} required/>
+
+        <br />
+
+        <input className="contact-inputs" type="text" placeholder="Asunto" name="subject" value={inputs.subject} onChange={handleChange} required/>
+
+        <br />
+
+        <textarea className="contact-inputs" name="description" placeholder="Haz tu consulta" value={inputs.description} onChange={handleChange} cols="30" rows="7" required></textarea>
+        
+        <br />
+
+        <p className="status-message">{status.message}</p>
+
+        <Button variant="light" type="submit"> Enviar </Button>
+         
+      </form>
+
         </div>
         </Container>
-    );
+    )
 }
-
 
 export default Contacto
 

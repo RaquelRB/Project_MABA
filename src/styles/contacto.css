@@ -2,21 +2,29 @@
 
 .Contacto{
     text-align: center;
-
     margin: auto
 }
 
-/* .Contacto h3{
-    line-height: 0.8rem;
-} */
 
-.Contacto img{
-    width: 200px
+.contact-inputs {
+    width: 50%;
+    margin: 5px 0;
+    font-size: 0.8rem
+}
+
+.status-message{
+    margin: 12px 0;
 }
 
 @media (max-width:500px){
-    .Contacto h3{
+    .Contacto h4{
         line-height: 2rem;
+    }
+
+    .contact-inputs {
+        width: 80%;
+        margin: 5px 0;
+        font-size: 0.8rem
     }
 }
 

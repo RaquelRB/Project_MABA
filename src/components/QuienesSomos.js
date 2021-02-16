@@ -16,7 +16,7 @@ const QuienesSomos = () => {
                 </Row>
 
                 <Row className="margin-top quienes-container">
-                    <Col xs={12} md={6}>
+                    <Col xs={12} md={6} className="persona">
                         <Image src="./images/estefi.jpg" roundedCircle />
 
                         <h5>ESTEFANIA ROBLES</h5>
@@ -25,6 +25,7 @@ const QuienesSomos = () => {
                         <p>El interiorismo es una herramienta que te ayuda a definir tu estilo de vida, confortable, funcional y personal.</p>
                         <p>El interiorismo es el reflejo de tu personalidad. El hogar es sinónimo de descanso, reunión.</p>
                     </Col>
+
 
                     <Col xs={12} md={6}>
                         <Image src="./images/marc.jpg" roundedCircle />
